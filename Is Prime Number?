@@ -1,0 +1,36 @@
+// To identify whether the input entered is prime value or not
+// Input - 11
+// Output - Prime
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+
+		int i = 2;
+
+		while (i < n)
+		{
+			if (n%i == 0)
+			{
+				System.out.println("Not Prime");
+				return;
+			}			
+			
+			i = i+1;
+		}
+		
+			System.out.println("Prime");
+			
+	}
+}
+
