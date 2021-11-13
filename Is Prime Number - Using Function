@@ -1,0 +1,33 @@
+// To identify whether the input number entered is Prime or Not
+// Input - 7
+// Output - YES
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+        Scanner sc = new Scanner(System.in);
+        int A = sc.nextInt();
+        String isPrimeNo = isPrime(A);
+
+        System.out.println(isPrimeNo);
+        
+	}
+
+    static String isPrime(int N)
+    {
+        for (int cnt =2; cnt <= N-1; cnt++)
+        {
+            if (N%cnt ==0)
+            {
+                return "NO";
+            }
+        }
+        return "YES";
+    }
+}
