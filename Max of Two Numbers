@@ -1,0 +1,36 @@
+/* 
+Write a program to input two numbers(A & B) from user and print the maximum element among A & B in each line.
+Input - 50  66
+Output - 66
+*/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		Scanner sc = new Scanner(System.in);
+		int A = sc.nextInt();
+		int B = sc.nextInt();
+		int result = largestNum(A, B);
+
+		System.out.println(result);
+		
+	}
+
+	static int largestNum(int A, int B)
+	{
+		if (A > B)
+		{
+			return A;
+		}
+		else
+		{
+			return B;
+		}
+	}
+}
+
